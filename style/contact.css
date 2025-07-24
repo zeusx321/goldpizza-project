@@ -1,0 +1,78 @@
+    body {
+      background-color: #fff5f5;
+      font-family: 'Segoe UI', sans-serif;
+      box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      
+    }
+    body,html{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .contact-section {
+        position: relative ;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 650px ;
+      padding: 50px 20px;
+      background-color: #f8d7da;
+    }
+    .contact-pizza-img {
+      position: absolute;
+      
+      right: -130px;
+      top: 20%;
+      height: auto;
+      
+    }
+
+    .contact-title {
+      color: #d62828;
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 2rem;
+      text-align: center;
+      
+      margin-left: 80%;
+    }
+
+    .form-control {
+      border: 2px solid #d62828;
+      border-radius: 10px;
+    }
+
+    .form-control::placeholder {
+      color: #e2a4a4;
+    }
+
+    .submit-btn {
+      background-color: #d62828;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      padding: 10px 20px;
+    }
+
+    .submit-btn:hover {
+      background-color: #b81e24;
+    }
+
+    .pizza-img {
+      max-width: 100%;
+      filter: blur(2px);
+      border-radius: 10px;
+        transition: filter 0.3s ease;
+    
+      
+      
+    }
+    .pizza-img:hover {
+      filter: blur(0);
+    }
+
+    @media (max-width: 768px) {
+      .pizza-img {
+        margin-top: 30px;
+      }
+    }

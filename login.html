@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldPizza Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+  <link rel="stylesheet" href="style/signup.css">
+</head>
+<body>
+  <div class="container">
+    <i class="fa-solid fa-pizza-slice"></i>
+    <h1 class="brand">GoldPizza</h1>
+
+    <form class="form" id="loginForm">
+  <input type="text" id="username" placeholder="Username" required>
+  <input type="password" id="password" placeholder="Password" required>
+
+  <div class="form-options">
+    <a href="#" class="forgot"> Remember Me</a>
+    <a href="#" class="forgot">Forgot Password</a>
+  </div>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="divider">Or Login with</div>
+
+<div class="socials">
+  <a href="https://facebook.com" class="social-link facebook" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+    <span>Facebook</span>
+  </a>
+  <a href="https://accounts.google.com" class="social-link google" target="_blank">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJ8ArAMBIgACEQEDEQH/xAAbAAEAAwADAQAAAAAAAAAAAAAABQYHAQIEA//EAEgQAAEDAgIECAoFCgcBAAAAAAEAAgMEBQYRITFBYRIiUXGBkaHRBxMWMkJSVJOxwSMkU1ViFDQ2Q3KSorPh8CUzNYKy0vEV/8QAGwEAAgMBAQEAAAAAAAAAAAAAAAUDBAYCAQf/xAAwEQACAgECAggEBwEAAAAAAAAAAQIDBAUREjETFCFBUVJhkSIycdEVQoGhseHwwf/aAAwDAQACEQMRAD8A3FERABERABERABFG3e+26zszrahrXkZtibpe7mHzVJunhCq5s2WynZTs2SS8d/VqHaop3QhzZcx8DIyO2EezxfI0heWouVDTHKoraaIj7SVrfiVjVdd7lcM/yyunlB9Evyb+6NHYvCABqCrPM8ENq9B88/Zf7+DaDiSyA/6rR9EwK+kd+s8pyjulETyePbn8ViaLnrkvAl/AqvOzeo5Y5W8KJ7Xt5WnMLusFhlkgf4yCR8T/AFo3Fp6wp63YyvdEQHVP5TGPQqBwv4tfapI5kfzIrW6FYu2uSf17Pua4iqdnx3ba0tjrmmilO15zjP8Au2dOStbHNe0OY4OaRmCDmCFZhOM1vFie7Htoe1kdjlERdkIREQAREQAREQARF1keyKN0kjg1jQXOc45AAbUAcvc1jHPe4Na0ZlxOQAVAxLjtxL6WxnIanVRGv9gfM/1UVi/FUl4ldS0bnMt7TzGbed3IOk7qul9+S38MDTafpMYpWXrt8Pud5ZHzSOkle6SRxzc95zJO8roiKmPgiIgAiIgAiIgApiw4juFkkAp3+Mp/Sp5DxTzeqebtUOuQC5wa0EuJyAAzJK9jJxe6OLK4WR4ZrdG0WG/UV8p/GUj8pGj6SF3nM7xvUoqlgrCptQFfXD669uTWA6ImnZvKtqb1OTinLmYfLhTC5xpe8QiIpCsEREAEREAFnHhBxEaiZ1oo3/Qxn6w4Hz3erzDbv5lbcXXg2azSTRfnEh8XDucdvQMysdJJJJJJOsnaqWVbt8CH2jYam+nnyXL6+JwiIqBpgiK14XwbPdWsq64up6M6WjLjyjdyDf8A+rqEJTe0SG++uiHHY9kViCGWolEVPFJLIdTI2lxPQFYKPA98qWhzoYqcH7aTI9QzWnW620Vsg8TQU7IWbeCNLuc6z0r1q9DDX5mZ+/XJt7VR2Xr/AL7mbt8HNcRx6+nB5AxxXyn8Ht1YM4aikl3Fzmn4LTUUnVayqtYy0+a9jFLlYrpawXVtFKxg/WAcJnWNA6VGrfTpGRVUxDgmiuDXTW8NpKrXoH0b+cbOcdqr2YjXbBjLG1uMnw3Lb1XIy5rS5wa1pc4nIADMk8i03BmExbGtr7iwOrSOIzWIR/2+C5wdhEWoituIa+t9BoObYh8zvVuUmPj7fFLmVtT1PpN6qX2d78f6/kIiK4IgiIgAiIgAiLpNIIonyO1MaXHoXjaS3YJblWxJMyrq3QOAfFGOAWnSCdv97lR7rZHwZzUgL4trNZb3hWh7i9znu0ucczzrhfPnqFvWJXLvfI0+NOWPFKJn6K0XWysqeFNSgMm1lvov7ioS322etusNuDSyWR/BOY80ayegZlPsbJhkr4OfgNoZEJRct+XMsWBcMtuUn/0a9gdRxuyjjI0SuHL+Edp5itOXxpKaKjpYqanaGxRNDWjcF9k/qqVcdjG5uXLKtcny7kERFKVAiIgAiIgAiIgAiIgAiIgAiIgAvBfHllrmy1nJvWQveorEhytwHLIPmqeoS4cSx+jJaFvbH6lXREXzk0AUvhmkjkrJKtzAZImcBjstIz1/DtUQrLhhv1KV20y5dgTbRIcWbH03f7FbLk40vYmERFvBGEREAROKq2e3WGpqqRwZMws4JIByze0HQdxVC8sr57Uz3Le5XXHP6LVvPH/MasqT3TKa7KW5xT7f+IWZlk42JRe3YWDyyvntTPct7k8sr57Uz3Le5V9Ex6rR5F7FTp7PMyweWV89qZ7lvcnllfPame5b3KvojqtHkXsHT2eZlg8sr57Uz3Le5PLK+e1M9y3uVfRHVaPIvYOns8zLB5ZXz2pnuW9yvGELnNdrM2eqcHTtkcx5Ayz2jRzELJ1oXg0eTbqxmwTg9bR3KjqOPVGjijFJotYls3Zs3uXFERZ8aBRWJBnbs+SQFSq8N7j8ZbJwNYAd1HNVM+PHi2JeDJaHtbF+pUERF84NAFZMMOBpJW7RJn2DuVbUjhq4wR3R1AZB4yZmYaOUacurPqTbRJOObH9f4Kma4ql7stiIi3glCIiAIHHP6LVvPH/MasqWt4upZ63D1VT0sRlmeWcFgyzOT2k9gWd+TF7+7Zetven2l2whS1KSXb4+iFebCUrE0u77kQil/Ji9/dsvW3vTyYvf3bL1t70y6enzr3RU6Kzyv2IhFL+TF7+7ZetvevNXWe42+JstbSPhjc7ghziNJ15aDuK9V1cnspL3PHXNLdpnhREUpyFoPgzb/h9a7lnA/hHes+Wl+DuEx2B0hH+bO5w5gA35FLtUe2O/qi1hLe0tCIizQ4C6yMEjHMdqcCCuyLxrdbMCiSsMUj43ecxxaehdCQASTkApPFbY6Kf8rkIbFINJ/ENn971Rbjc5Kwljc2Q+rtPOsItKteRKrkk+f+9Bjk6pTj1KT7ZPuPZcrzriozuMnd3qKpKqWjrIquF30sTw8E7Tv518EWixsavGjw1oyGVmXZNnHN/T0NsttdDcqGGrpznHK3PLkO0HeDoXpWV4QxEbLUmGoJNDKc3gDPxbvWHzWpRSMljbJE9r2OGbXNOYITauamhtjZCuhv3952REUhYCIiACIiACzzwj14mr4KFjsxA3hvy9Z2odA/5K34gvMFloHTyEOmdohiz0vd3DaVklRNJUzyTzuL5ZHFz3HaSm+l47c+lfJcihm2pR4EfNERPxYDoC2LDtKaKx0VO4ZObEC4fiOk9pKy/DtAbleaWmLc2F/Ck/YGk93SthSTV7flr/AFGOBDnIIiJIMQiIgCMxFam3i1S0pyEnnROPovGru6Vj8kb4pHRytLJGEtc06wRrC3NUjHmHjKHXaiZm9o+sMG0D0+jaoLobriQuzsfjXSR5ooKIiqCcKbw7iWrsjhG36akJzdC46t7TsPZ8VCIvU2nujuE5QfFF9psFoxDbbs0CmnDZT+pk4rx0bejNSqwpSdHiC70bQ2nuEwaNTXkPA/ezViOR4oY16j517GxIstbja9tGRlhdvMQ+S6S4yvsgyFWyP9iJvzBXXTxJvxCrwZqjnBrS5xAA0knYqze8Z2+3tdHRkVlRs4B4jTvd8h2LO6241td+eVc0wzz4L3ktHRqXlXDyH3Ir26jJ9kFseu43CpudU6prJTJIdA5GjkA2BeZdd4XIIK1en6lVkRUPll4fYpcfE+3mcoimcL2R96uIY4EUsWTpnbvV5z3plZZGuLlLkjuMXN8KLX4PbSaaifcZm5SVIyjz2Rjb0nsAVvXVjGxsayNoaxoya0DIAci7LJX3O6xzfePaq1XBRQREUJIEREAEREAZ5i/CTqZ0lfao+FAeNLA0aY97R6u7Zzaqat1VRxHgyGuc+qthbBUnS6M6GPPyPZ8VWsp74ivKwd/jr9jOEX3raOpoKgwVkL4ZR6Lhr3jlG8L4KsK2mnswiIg8CIiACIiACJqVkw/hCtuhbNVB1LSHTwnDjvH4R8z2rqCk38PM7rrlY9oojLJaaq81gp6ZuQGmSU+awcv9Nq1i022ntVEykpW5NbpLjredpO9drdQU1tpW01HEI429ZPKTtK9Sbzyrra1Cx77DzGxlUt32sIiKAtBERABERABERABERAHnraKmr4DBWQMmjPouHw5FUrngCB5L7ZUuhP2c3Gb0HWO1XVFzKEZcyKyiu35kZNW4TvVITnRmZvrQHh9mvsURNTVEBIngliI+0YW/FbgiheOu5lKWmwfyyMJ4TfWHWuW8c5M4x5BpW4mGInMxMJ3tC7NY1nmtDeYLzq/qcfhr837f2Y3TWa51R+r2+peOXxZA6zoU7QYDuUxBrJoaZu0A8N3UNHatJRdKiK5k0NPrXzPchLRha12tzZI4jNO3VLMeEQdw1DqU2iKZJLkXYQjBbRWwREXp0EREAEREAf/Z" alt="">
+    <span>Google</span>
+  </a>
+</div>
+
+
+    <p class="bottom-text">Don’t have an account? <a href="index.html">Sign Up Here!</a></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

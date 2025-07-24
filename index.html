@@ -4,28 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoldPizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style/story.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
 </head>
+
 <body>
-    <header>
-        <div><img src="assets/Pizza.png" alt=""><h1>GoldPizza</h1></div>
-        <div>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Menu</li>
-                    <li>Feedback</li>
-                    <li>ContactUs</li>
-                    <li><img src="assets/profile.svg" alt=""></li>
-                </ul>
-            </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/Pizza.png" alt="Logo" width="30" />
+        GoldPizza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section container-fluid">
+    <div class="row align-items-center d-flex">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="hero-title fw-bold">Order your<br>gold pizza</h1>
+        <p class="hero-text">Freshly baked with premium ingredients.<br>Delivered hot & fast!</p>
+        <button class="btn btn-order">Order Now</button>
+        <button class="btn btn-outline-order">See menu</button>
+      </div>
+
+      <div class="col-lg-6 text-center position-relative mt-5 mt-lg-0">
+        <div class="red-circle"></div>
+        <img src="assets/main-pizza.png" alt="Delicious Pizza" class="pizza-img" />
+      </div>
+    </div>
+  </section>
+
+ 
+   
+  <div class="container2">
+    <div class="circle"></div>
+
+    <div class="text-area">
+      <h1>A true story<br>behind every slice!</h1>
+      <p>◉ Inspired by the rich traditions of a Mediterranean village, our <strong>Gold Pizza</strong> recipe has been passed down through generations.</p>
+    </div>
+
+    <div class="image-area">
+      <img src="assets/joss-woodhead-3wFRlwS91yk-unsplash.png" alt="Mediterranean Village">
+    </div>
+  </div>
+
+
+
+  <section class="feedback-section">
+    <div class="container py-5">
+      <h2 class="section-title text-center mb-5">FeedBacks</h2>
+      <div class="row g-4">
+        
+        <div class="col-md-6">
+          <div class="feedback-card">
+            <div class="d-flex align-items-start gap-3">
+              <img src="assets/mitchell-luo-ymo_yC_N_2o-unsplash.png" class="avatar" alt="Marcos Rashford">
+              <div>
+                <p class="feedback-text">“The pizza looks mouthwatering! The golden crust and generous toppings make it super appetizing. The red chili adds a spicy, bold look that pops visually.”</p>
+                <p class="feedback-name">Marcos Rashford</p>
+                <p class="stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <section>
-        <div></div>
-        <img src="assets/main-pizza.png" alt="">
-    </section>
+        <div class="col-md-6">
+          <div class="feedback-card">
+            <div class="d-flex align-items-start gap-3">
+              <img src="assets/mitchell-luo-ymo_yC_N_2o-unsplash.png" class="avatar" alt="A. Ineasta">
+              <div>
+                <p class="feedback-text">“Great combination of toppings – the pepperoni and chili offer both flavor and heat.”</p>
+                <p class="feedback-name">A. Ineasta</p>
+                <p class="stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="style/app.js"></script>
+        <div class="col-md-6">
+          <div class="feedback-card">
+            <div class="d-flex align-items-start gap-3">
+              <img src="assets/mitchell-luo-ymo_yC_N_2o-unsplash.png" class="avatar" alt="Pedri Gonzalez">
+              <div>
+                <p class="feedback-text">“The story behind the pizza, inspired by Mediterranean traditions, gives it depth and uniqueness.”</p>
+                <p class="feedback-name">Pedri Gonzalez</p>
+                <p class="stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="feedback-card">
+            <div class="d-flex align-items-start gap-3">
+              <img src="assets/mitchell-luo-ymo_yC_N_2o-unsplash.png" class="avatar" alt="Robert Lewandowski">
+              <div>
+                <p class="feedback-text">“With the name ‘Gold Pizza’ and the rich design, people might expect a premium or even gourmet taste. Consider playing that up more.”</p>
+                <p class="feedback-name">Robert Lewandowski</p>
+                <p class="stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="feedback-form mt-5 text-center">
+  <h3 class="form-title mb-4">Add your Feedback here!</h3>
+  <form class="feedback-bar" onsubmit="event.preventDefault();">
+    <input type="text" class="feedback-input" placeholder="add your feedback" required>
+    <button type="submit" class="send-btn">Send</button>
+  </form>
+</div>
+
+  </section>
+  
+
+
+   <div class="contact-section py-5">
+    <img src="assets/p-1.png" alt="Pizza Image" class="contact-pizza-img">
+    <div class=" ">
+
+      <div class="col-md-6">
+        <h1 class="contact-title">Contact Us</h1>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold text-danger">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="username" class="form-label fw-semibold text-danger">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="username" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold text-danger">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold text-danger">Message</label>
+            <textarea class="form-control" id="message" placeholder="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Order Now</button>
+        </form>
+      </div>
+
+
+
+
+
+
+    
 </body>
 </html>
