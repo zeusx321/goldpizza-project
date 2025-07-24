@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoldPizza Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+        text-decoration: none;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff9f9;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      align-items: center;
+      font-weight: bold;
+      color: #d62828;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      
+    }
+    .navbar a{
+        color: #d62828;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li {
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .nav-links li:hover {
+      text-decoration: underline;
+    }
+
+    .main-title {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Chewy', cursive;
+      color: #d62828;
+      margin: 20px 0;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 0 40px 40px;
+    }
+
+    .menu-card {
+      border: 2px solid #d62828;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .menu-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .menu-card h2 {
+      font-family: 'Chewy', cursive;
+      color: #d62828;
+      margin-bottom: 10px;
+    }
+
+    .sizes {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #d62828;
+    }
+
+    .order-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .order-box button {
+      background: #d62828;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order-box input {
+      width: 40px;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .order-btn {
+      background: #d62828;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .order-btn:hover {
+      background: #a21c1c;
+    }
+    .logo img {
+      width: 30px;
+      height: 30px;
+    }
+     @media (max-width: 992px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="assets/Pizza.png" > GoldPizza</div>
+    <ul class="nav-links">
+      <li> <a href="index.html"> Home </a></li>
+      <li><a href="menu.html">  Menu</a></li>
+      <li><a href="#feedback-section"> Feedback</a></li>
+      <li><a href="#contact-section"> Contact Us</a> </li>
+      <li class="profile"><a href="login.html"> Profile</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="main-title">Menu</h1>
+
+  <div class="menu-grid">
+    <!-- Repeated Cards -->
+    <div class="menu-card">
+      <img src="assets/p-3.png" alt="Veggie">
+      <h2>pepperoni</h2>
+      <div class="sizes">
+        <span>S<br>135EGP</span>
+        <span>M<br>155EGP</span>
+        <span>L<br>185EGP</span>
+      </div>
+      <div class="order-box">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+      <button class="order-btn">Order!</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="assets/p-6.png" alt="Chicken Ranch">
+      <h2>chicken ranch</h2>
+      <div class="sizes">
+        <span>S<br>135EGP</span>
+        <span>M<br>155EGP</span>
+        <span>L<br>185EGP</span>
+      </div>
+      <div class="order-box">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+      <button class="order-btn">Order!</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="assets/p-2.png" alt="Chicken Ranch">
+      <h2>Chessy lover</h2>
+      <div class="sizes">
+        <span>S<br>135EGP</span>
+        <span>M<br>155EGP</span>
+        <span>L<br>185EGP</span>
+      </div>
+      <div class="order-box">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+      <button class="order-btn">Order!</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="assets/p-5.png" alt="Chicken Ranch">
+      <h2> ranch twist</h2>
+      <div class="sizes">
+        <span>S<br>135EGP</span>
+        <span>M<br>155EGP</span>
+        <span>L<br>185EGP</span>
+      </div>
+      <div class="order-box">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+      <button class="order-btn">Order!</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="assets/p-4.png" alt="Chicken Ranch">
+      <h2>bbq chicken</h2>
+      <div class="sizes">
+        <span>S<br>135EGP</span>
+        <span>M<br>155EGP</span>
+        <span>L<br>185EGP</span>
+      </div>
+      <div class="order-box">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+      <button class="order-btn">Order!</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="assets/p-1.png" alt="Chicken Ranch">
+      <h2>Viggie</h2>
+      <div class="sizes">
+        <span>S<br>135EGP</span>
+        <span>M<br>155EGP</span>
+        <span>L<br>185EGP</span>
+      </div>
+      <div class="order-box">
+        <button>-</button>
+        <input type="number" value="1" min="1" />
+        <button>+</button>
+      </div>
+      <button class="order-btn">Order!</button>
+    </div>
+
+  </div>
+</body>
+</html>

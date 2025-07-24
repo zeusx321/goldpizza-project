@@ -8,7 +8,7 @@
       min-height: 100vh;
     }
 
-    .circle {
+    /* .circle {
       position: absolute;
       top: 0;
       right: 0;
@@ -17,7 +17,7 @@
       background-color: #e63946;
       border-bottom-left-radius: 300px;
       z-index: 0;
-    }
+    } */
 
     .text-area {
       flex: 1 1 45%;
